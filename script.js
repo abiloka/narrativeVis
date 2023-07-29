@@ -9,7 +9,7 @@ var dataset = [];					//Initialize empty array
 var xRange = 1500;	//Max range of new x values
 var yRange = 300;	//Max range of new y values
 
-d3.csv("http://mouseover.nl/csv/filmdeathcounts.csv", function(data) {
+d3.csv("https://github.com/abiloka/narrativeVis/blob/e9d63642c587d5b227dadc9a09c6ad3bb7964e64/filmdeathcounts.csv", function(data) {
 	data.forEach( function(d) {
 		dataset.push([d.Film, d.Body_Count, d.Length_Minutes, d.IMDB_Rating]);
 	});
